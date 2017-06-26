@@ -117,6 +117,10 @@ int main()
     int ia2[10];    //all elements are undefined
 }
 ```
+string 是 “类” （英文叫 class）。
+string sa2[10]; string sa[10];  是string类的 对象，自动 调用  string类 的构建 函数，各元素初始化为空字符串。
+int ia[10];  在 main(){} 函数以外，是全局量，全局量 自动初始化 为 0，这是编译器的规定。
+int ia2[10]; 在 main(){} 函数以内，是局部量，局部量编译器不自动作初始化，其值不确定，这也是编译器的规定。
 
 ## Exercise 3.29:
 >List some of the drawbacks of using an array instead of a vector.
